@@ -16,20 +16,15 @@ body{
 
 	width: 100%;
 	height: 100px;
-	background-color: transparent;
 	font-size:16px;
 	display: inline-block;
 	position: fixed;
-	position: relative;
-	*justify-content: flex-end;
+	justify-content: flex-end;
 	align-items: center;
 }
 
-
-
-
 #menu a {
-	color: black; /* debe ser blanco*/
+	color: white; 
 	text-decoration: none;
 	left:900px;
 	position: relative;
@@ -40,13 +35,18 @@ body{
 }
 
 #menu a:hover{
-	background-color:#E54E79;
+	color:#E54E79;
+}
+
+nav{
+	position: fixed;
+	color: transparent;
 }
 
 
-
+/*fondo*/
 header{
-	background-image: url(../assets/images/lyft-fondo.png);
+	/*background-image: url(../assets/images/lyft-fondo.png);*/
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: cover;
@@ -55,6 +55,8 @@ header{
    
 
 }
+
+/*Formulario */
 
 #formulario.flex-container {
 	
@@ -70,8 +72,8 @@ header{
 	background-color: white;
 	padding: 60px 40px;
 	box-sizing: border-box;
-	/*flex-direction: column;
-	align-items: center;*/
+	flex-direction: column;
+	align-items: center;
 
  
 }
@@ -105,9 +107,21 @@ header{
 
 }
 
+video {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
 
-
-
+.tr-grad{
+	color: #76278f;
+}
 
 
 
