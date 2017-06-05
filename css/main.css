@@ -14,13 +14,13 @@ body{
 /* seccion menu nav */
 #menu.flex-container {
 
-	width: 100%;
-	height: 100px;
-	font-size:16px;
-	display: inline-block;
-	position: fixed;
-	justify-content: flex-end;
-	align-items: center;
+	display: flex;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    background-color:  #2B1E66 ;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu a {
@@ -41,6 +41,21 @@ body{
 nav{
 	position: fixed;
 	color: transparent;
+}
+
+#menu img{
+    padding-right: 5%;
+    margin: 10px;
+}
+
+.logo{
+	width: 60px;
+	height: 45px;
+	top: 20px;
+	z-index: 1;
+	margin-right: auto;
+	margin-left: 50px;
+	cursor: pointer;
 }
 
 
@@ -64,11 +79,10 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-	height: 700px;
-	height: 400px;
+	height: 600px;
 	width: 500px;
 	float: right;
-	margin-top: 200px;
+	margin-top: 100px;
 	background-color: white;
 	padding: 60px 40px;
 	box-sizing: border-box;
@@ -80,7 +94,7 @@ header{
 
 #formulario h4{
 	color: #2B1E66;
-	font-size: 1.8em;
+	font-size: 3em;
 	margin: 0;
 }
 
@@ -90,6 +104,20 @@ header{
 	margin-top: 15px;
 
 }
+
+
+#formulario label{
+	color: #bfc7d9;
+	position: absolute;
+	top: 330px;
+}
+
+#formulario.input-style{
+	border: none;
+	border-bottom: 1px solid #352384;
+	width: 100%;
+}
+
 
 #boton  {
 	color: #EDE9E2;
@@ -123,5 +151,36 @@ video {
 	color: #76278f;
 }
 
+#information.flex-container{
+	color: white;
+	padding: 50px 160px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 
 
+
+.informacion #parrafo-1, #parrafo-2, #parrafo-3{
+	
+	margin: 1.5rem 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.informacion h3{
+    font-weight: 500;
+	font-size: 1.75rem;
+}
+
+.informacion p{
+	margin-top: 1rem;
+}
+
+.informacion img{
+	float: right;
+}
+	
+	
+
+}
